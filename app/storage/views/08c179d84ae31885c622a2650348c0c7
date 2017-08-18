@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tinyurl</title>
+</head>
+<body>
+    
+    <div>
+        <form method="post" action="<?php echo URL::to('/make-url'); ?>">
+        <input name="url"/>
+        <button type="submit">Make URL</button>
+        <?php if($errors->first('url')): ?>
+        <p><?php echo e($errors->first('url')); ?></p>
+        <?php endif; ?>
+        </form> 
+    </div>
+<?php if(Auth::check()): ?>
+<a href="<?php echo URL::to('auth/logout'); ?>">Logout</a>
+<?php endif; ?>
+</body>
+</html>
