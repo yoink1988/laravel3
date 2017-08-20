@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddUserIdToLinks' => $baseDir . '/app/database/migrations/2017_08_19_141815_add_userId_to_links.php',
+    'AuthController' => $baseDir . '/app/controllers/AuthController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -1584,7 +1586,11 @@ return array(
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'TinyURL\\Repository\\Link\\DbLinkRepository' => $baseDir . '/app/TinyURL/Repository/Link/DbLinkRepository.php',
     'TinyURL\\Repository\\Link\\LinkRepositoryInterface' => $baseDir . '/app/TinyURL/Repository/Link/LinkRepositoryInterface.php',
+    'TinyURL\\Repository\\Link\\ShortLinkRepository' => $baseDir . '/app/TinyURL/Repository/Link/ShortLinkRepository.php',
     'TinyURL\\Repository\\TinyURLRepositoryProvider' => $baseDir . '/app/TinyURL/Repository/TinyURLRepositoryProvider.php',
+    'TinyURL\\Repository\\User\\DbUserRepository' => $baseDir . '/app/TinyURL/Repository/User/DbUserRepository.php',
+    'TinyURL\\Repository\\User\\UserRepositoryInterface' => $baseDir . '/app/TinyURL/Repository/User/UserRepositoryInterface.php',
+    'TinyURL\\Service\\IdEncoder' => $baseDir . '/app/TinyURL/Service/IdEncoder.php',
     'User' => $baseDir . '/app/models/User.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Formatter' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Formatter.php',

@@ -1,0 +1,12 @@
+body{
+	background: #71b3ca;
+}
+.content{
+	width: 700px;
+	margin: auto;
+}
+.content form{
+	background: #d5ecf4;
+	padding: 20px;
+	border-radius:6px;
+}

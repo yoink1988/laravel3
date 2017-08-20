@@ -1,10 +1,15 @@
-<html>
-<body>
+@extends('layout.layout')
+@section('content')
+<label>Sign In</label>
 <form method="post" action="{{URL::to('auth/login')}}">
-Email <input name="email"/>
-pass <input type="password" name="password"/>
-<button type="submit">Login</button>
+<p>Email <input name="email"/>
+{{$errors->first('email')}}
+<p>Password <input type="password" name="password"/>
+{{$errors->first('password')}}
+<p><button type="submit">Login</button>
 </form>
 <p>or <a href="{{URL::to('auth/register')}}">Register</a></p>
-</body>
-</html>
+
+<p>{{$mess}}</p>
+@endsection
+

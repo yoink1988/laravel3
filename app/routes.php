@@ -17,3 +17,4 @@ Route::get('/{id}', 'IndexController@getRedirect');
 Route::controller('auth', 'AuthController');
 
 
+

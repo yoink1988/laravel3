@@ -26,8 +26,8 @@ return array(
 	|
 	*/
 
-	'url' => 'hhttp://192.168.0.15/~user9/tinyurl/',
-
+	//'url' => 'hhttp://192.168.0.15/~user9/tinyurl/',
+	'url' => 'http://localhost/',
 	/*
 	|--------------------------------------------------------------------------
 	| Application Timezone

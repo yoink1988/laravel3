@@ -221,6 +221,8 @@ class ComposerStaticInitc8d8b10c8450148dfce35aab368962d0
     );
 
     public static $classMap = array (
+        'AddUserIdToLinks' => __DIR__ . '/../..' . '/app/database/migrations/2017_08_19_141815_add_userId_to_links.php',
+        'AuthController' => __DIR__ . '/../..' . '/app/controllers/AuthController.php',
         'BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'Boris\\Boris' => __DIR__ . '/..' . '/d11wtq/boris/lib/Boris/Boris.php',
         'Boris\\CLIOptionsHandler' => __DIR__ . '/..' . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -1799,7 +1801,11 @@ class ComposerStaticInitc8d8b10c8450148dfce35aab368962d0
         'TestCase' => __DIR__ . '/../..' . '/app/tests/TestCase.php',
         'TinyURL\\Repository\\Link\\DbLinkRepository' => __DIR__ . '/../..' . '/app/TinyURL/Repository/Link/DbLinkRepository.php',
         'TinyURL\\Repository\\Link\\LinkRepositoryInterface' => __DIR__ . '/../..' . '/app/TinyURL/Repository/Link/LinkRepositoryInterface.php',
+        'TinyURL\\Repository\\Link\\ShortLinkRepository' => __DIR__ . '/../..' . '/app/TinyURL/Repository/Link/ShortLinkRepository.php',
         'TinyURL\\Repository\\TinyURLRepositoryProvider' => __DIR__ . '/../..' . '/app/TinyURL/Repository/TinyURLRepositoryProvider.php',
+        'TinyURL\\Repository\\User\\DbUserRepository' => __DIR__ . '/../..' . '/app/TinyURL/Repository/User/DbUserRepository.php',
+        'TinyURL\\Repository\\User\\UserRepositoryInterface' => __DIR__ . '/../..' . '/app/TinyURL/Repository/User/UserRepositoryInterface.php',
+        'TinyURL\\Service\\IdEncoder' => __DIR__ . '/../..' . '/app/TinyURL/Service/IdEncoder.php',
         'User' => __DIR__ . '/../..' . '/app/models/User.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',

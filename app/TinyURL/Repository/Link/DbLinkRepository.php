@@ -14,6 +14,7 @@ class DbLinkRepository implements LinkRepositoryInterface
     {
         $link = $this->_model;
         $link->url = $url;
+        $link->user_id = \Auth::id();
         $link->save(); 
         return $link->id;  
     }
